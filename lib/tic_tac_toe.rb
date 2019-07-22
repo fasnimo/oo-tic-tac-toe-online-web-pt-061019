@@ -95,7 +95,7 @@ end
   end
 
  def play
-    until over? do
+    until over?
       turn
     end
     if won?
