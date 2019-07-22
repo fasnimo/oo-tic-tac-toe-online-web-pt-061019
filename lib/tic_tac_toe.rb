@@ -55,8 +55,8 @@ def turn
     puts "Where would you like to place your token? [1-9]"
     user_input = gets.strip
     index = input_to_index(user_input)
+    token = current_player
     if valid_move?(index)
-      token = current_player
       move(index, token)
        display_board
     else
