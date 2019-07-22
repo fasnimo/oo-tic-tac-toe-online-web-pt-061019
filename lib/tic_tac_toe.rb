@@ -61,7 +61,7 @@ def turn
     else
       turn
     end
-   end
+end
  
 def won?
     WIN_COMBINATIONS.detect {|win_combo| win_combo.all?{|pos| @board[pos]=="X"} || win_combo.all?{|pos| @board[pos]=="O"}}
