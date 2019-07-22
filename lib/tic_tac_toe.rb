@@ -72,7 +72,7 @@ def full?
 end
 
 def draw?
-   !won? && full?
+   !won? && full? ? ture : false
 end
 
 def over?
