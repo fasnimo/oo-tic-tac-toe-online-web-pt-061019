@@ -76,11 +76,8 @@ def draw?
 end
 
 def over?
-    if draw? == true || full? == true || won? == true
-      return true
-    else
-      false
-  end
+   draw? || full? || won? ? true : false 
+  
 end
   def winner
     WIN_COMBINATIONS.find do |win_combination|
