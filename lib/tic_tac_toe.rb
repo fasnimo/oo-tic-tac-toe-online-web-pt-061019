@@ -79,7 +79,8 @@ def over?
    draw? || full? || won? ? true : false 
   
 end
-  def winner
+
+def winner
     WIN_COMBINATIONS.find do |win_combination|
       if @board[win_combination[0]] == "X" && @board[win_combination[1]] == "X" && @board[win_combination[2]] == "X"
           return "X"
